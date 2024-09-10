@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shivam Rathore</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--    Menu Box      -->
+<div class="navigation">
+	<ul>
+		<li class="list active">
+			<a href="#">
+			   <span class="icon">
+			   	<ion-icon name="home-outline"></ion-icon>
+			   </span>
+			   <span class="text">Home</span>
+		    </a>
+		</li>
+		<li class="list">
+			<a href="#">
+			   <span class="icon">
+			   	<ion-icon name="search-outline"></ion-icon>
+			   </span>
+			   <span class="text">Search</span>
+		    </a>
+		</li>
+		<li class="list">
+			<a href="#">
+			   <span class="icon">
+			   	<ion-icon name="add-circle-outline"></ion-icon>
+			   </span>
+			   <span class="text">Create</span>
+		    </a>
+		</li>
+		<li class="list">
+			<a href="#">
+			   <span class="icon">
+			   	<ion-icon name="videocam-outline"></ion-icon>
+			   </span>
+			   <span class="text">Reels</span>
+		    </a>
+		</li>
+		<li class="list">
+			<a href="#">
+			   <span class="icon">
+			   	<ion-icon name="person-outline"></ion-icon>
+			   </span>
+			   <span class="text">Account</span>
+		    </a>
+		</li>
+		<div class="indicator"></div>
+	</ul>
+</div>
+<script>
+	const list= document.querySelectorAll('.list');
+	function activeLink(){
+		list.forEach((item)=>
+		item.classList.remove('active'));
+		this.classList.add('active');
+	}
+	list.forEach((item) =>
+	item.addEventListener('click',activeLink));
+</script>
+
+
+
+<script type="module" src="https://unpkg.com"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
